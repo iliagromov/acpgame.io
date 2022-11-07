@@ -1,0 +1,163 @@
+.modal-gallery{
+    background-color: @color_black;
+    .modal__action{
+        z-index: 100;
+        .page__btn{
+            &::before, 
+            &::after{
+                background-color: @color_yellow;
+            }
+        }
+       
+    }
+    .modal__content{
+        flex-wrap: wrap;
+        // position: relative;
+        height: 100vh;
+        // padding-top: 80px;
+        padding-top: 6%;
+        overflow-y: auto;
+        .smm-block({
+            overflow: hidden;
+        });
+        .xs-block({
+            overflow-y: auto;
+            padding-bottom: 70px;
+        });
+        &-text{
+            position: absolute;
+            left: 100px;
+            z-index: 10;
+            .xs-block({
+                left: 10px;
+                position: relative;
+            });
+            .page__text.date{
+                margin: 5px 0;
+                text-transform: uppercase;
+                color: @color_yellow;
+            }
+        }
+        &-img{
+            .size(6);
+            position: relative;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            
+            &-big{
+                .size(2.5);
+                .size-smm(4);
+                .size-xs(6);
+                margin: 0 auto;
+                #sliderModalGallery{
+                    display: flex;
+                    // align-items: center;
+                    align-items: flex-start;
+                    .page__img {
+                        img{
+                            max-height: 500px;
+                        }
+                      
+                    }
+                    .page__link{
+                        display: block;
+                    }
+                }
+            }
+            &-preview{
+                .size(6);
+                .xs-block({
+                    opacity: 0;
+                });
+                align-self: flex-end;
+                .slider-thumbnails{
+                    display: flex;
+                    justify-content: center;
+                    overflow-x: auto;
+                    &::-webkit-scrollbar{
+                        width: 5px;
+                        height: 5px;
+                    }
+                    .xs-block({
+                        overflow: hidden;
+                    });
+                    .page__img_small{
+                        opacity: 0.6;
+                        display: flex;
+                        .xs-block({
+                            background-color: @color_gray;
+                            &:nth-child(n + 6){
+                                display: none;
+                            }
+                        });
+                        &.tns-nav-active{
+                            opacity: 1;
+                            background-color: @color_yellow;
+                            border:1px solid @color_yellow;
+                        }
+                        img{
+                            max-width: 204;
+                            min-width: 117px;
+                            width: auto;
+                            height: 150px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+    .slider__actions{
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        .smm-block({
+            justify-content: space-between;
+        });
+
+        .xs-block({
+                justify-content: space-around;
+                top: 100%;
+                position: fixed;
+                z-index: 1;
+                transform: translateY(-100%);
+        });
+        button{
+            width: 70px;
+            height: 70px;
+            position: relative;
+            top: 0;
+            background-color: transparent;
+            border: 1px solid @color_gray;
+            &[data-controls="prev"],
+            &[data-controls="next"]  {
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    .sprite(@icon-arrow-outline);
+                   
+                }
+            }
+            &[data-controls="prev"]{
+                &::before{
+                    transform: rotate(180deg);
+                    
+                }
+            }
+            &[data-controls="next"]{
+                &::before{
+                    transform: rotate(0deg);
+                }
+            }
+            .xs-block({
+                border-color: @color_white;
+            });
+        }
+    }
+}

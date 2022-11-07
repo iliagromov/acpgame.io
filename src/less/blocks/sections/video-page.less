@@ -1,0 +1,87 @@
+.video-page {
+    background-color: @color_black;
+    //padding-bottom: 250px;
+    .page__title-h1{
+        margin-bottom: 34px;
+        &_text-shadow_gray{
+        
+            span{
+                &:nth-of-type(2){
+                    color:@color_yellow;
+                    
+                }
+            }
+        }
+    }
+    .page-nav{
+        .row-flex();
+        margin-bottom: 70px;
+        .page-btn{
+            .size(1);
+            .size-md(1.5);
+            .size-smm(3);
+            .size-sm(2.5);
+            .size-xs(3);
+            .smm-block({
+                margin: 20px 0 20px;
+            });
+            .page__btn_gray-yellow{
+            .mmd-block({
+                
+                padding: 12px 14px;
+            });
+           }
+        }
+        .page__btn{
+            .shift-right(.5);
+            &.is-active{
+                color: #ffed5c;
+                border: 1px solid #ffed5c;
+               }
+        }
+    }
+    .video-item-container{
+        position: relative;
+        margin-top: 16px;
+        .row-flex();
+        .page__img{
+            .size(3);
+            .size-xs(6);
+            padding-bottom: 5px;
+            box-sizing: border-box;
+            &:nth-child(odd){
+                padding-right: 5px;
+            }
+            &:nth-child(even){
+                padding-left: 5px;
+            }
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 410px;
+            height: 170px;
+            right: -16px;
+            top: -16px;
+            z-index: -1;
+            background-color: @color_yellow;
+        }
+    }
+    .slider.page-nav{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        .page-nav{
+            margin-bottom: 0;
+        }
+       
+    }
+    .slider.page-nav{
+        position: relative;
+        .slider__actions{
+            display: flex;
+            position: absolute;
+            right: 120px;
+            top: -17px;
+        }
+    }
+}

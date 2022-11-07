@@ -1,0 +1,52 @@
+.trust {
+    background-color: @color_white;
+    padding-bottom: 120px;
+    overflow: hidden;
+    .xs-block({
+        
+        padding-bottom: 50px;
+        
+    });
+    &-block {
+        .page__title-h3 {
+            padding-bottom: 46px;
+        }
+
+        &__img {
+            .size-xs(6);
+            //height: 40vh;
+            .page__img-container{
+                .page__img{
+                    display: inline-block;
+                    .size(1.5);
+                    .size-xs(6);
+                    .xs-block({
+                        text-align: center;
+                        margin: 20px auto;
+                    });
+                    &:nth-child(4n + 4){
+                       .shift-right(-1.5);
+                       .shift-xs-right(0);
+                    }
+                }
+            }
+            .slider-thumbnails{
+                display: flex;
+                justify-content: center;
+                margin-top: 70px;
+            }
+            .page__img_small{
+                width: 10px;
+                height: 10px;
+                margin: 0 10px;
+                background-color: @color_gray;
+               
+                &.tns-nav-active{
+
+                   background-color: @color_yellow;
+
+                }
+            }
+        }
+    }
+}

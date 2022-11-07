@@ -1,0 +1,142 @@
+@import '../fonts/fonts.less';
+.reset();
+
+.wrapper{
+    .wrapper();
+    // для того чтобы между section и контентом был слой с линией //.bg-grid == wrapper
+    position: relative;
+    z-index: 15;
+}
+
+// .scrollbar(@color_scrollbar-track, @color_scrollbar-thumb, 5px,5px);
+.scrollbar(@color_scrollbar-track, @color_scrollbar-thumb);
+
+@font-face {
+  .font(@font; @fontBold);
+}
+@font-face {
+  .font(@font; @fontRegular);
+}
+@font-face {
+  .font(@Gerbera; @Gerbera);
+}
+@font-face {
+  .font(@Noah; '@{Noah}-Regular');
+}
+@font-face {
+  .font(@Noah; '@{Noah}-Bold');
+}
+@font-face {
+  .font(@Noah; '@{Noah}-ExtraBold');
+}
+@font-face {
+  .font(@Dincondensedc; @Dincondensedc);
+}
+// body{
+//   display: flex;
+//   flex-wrap: wrap;
+//   .header,
+//   .page,
+//   .footer{
+//     width: 100%;
+//   }
+//   .header{
+//     align-self: flex-start;
+//   }
+//   .footer{
+//     align-self: flex-end;
+//   }
+// }
+// body{
+//   padding-bottom: 13%;
+// }
+// .footer{
+//   width: 100%;
+//   position: absolute;
+//   bottom: 0;
+// }
+body {
+  position: relative;
+  font-family: @Gerbera;
+  background-color: @color_black;
+  transition: all .5s ease-out;
+  min-height: 100vh;
+ 
+}
+a, button{
+  cursor: pointer;
+  &:focus{
+      outline: none;
+  }
+}
+*:focus {
+  
+  outline: none !important;
+}
+input{
+  cursor: text;
+  &:focus{
+      outline: none;
+  }
+}
+html:not([data-scroll='0']) .header {
+ 
+  transition: all ease-out .5s;
+ 
+}
+video{
+  max-width:100%;
+  color: #000;
+}
+
+
+details{
+  /* Убираем стандартный маркер Chrome */
+  summary{
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+    outline:none;
+    /* Убираем стандартный маркер Firefox */
+    &::-webkit-details-marker {
+      display: none
+    }
+  }
+  &[open] summary,
+  summary{
+    &::after {
+      content: '';
+      margin-right: 7px;
+      display: inline-block;
+      position: absolute;
+      right: 23px;
+      .sprite(@icon-chevron-black);
+    }
+  }
+  &[open] summary{
+ 
+    &:focus{
+      border: none;
+    }
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+  
+}
+.author{
+  color: #fff;
+  font-size: 10px;
+  line-height: 0;
+  float: right;
+  margin-top: -20px;
+  .page__link{
+    font-size: 11px;
+  }
+  .smm-block({
+    width: 100%;
+    float: none;
+    margin-top:10px;
+    text-align: center;
+  });
+}

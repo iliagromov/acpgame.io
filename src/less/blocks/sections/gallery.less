@@ -1,0 +1,87 @@
+.gallery{
+    background-color: @color_black;
+    .page__title-h1{
+        margin-bottom: 34px;
+        &_text-shadow_white{
+            span{
+                &:nth-child(1){
+                    font-size: 50px;
+                    line-height: 100%;
+                    .xs-block({
+                        font-size: inherit;
+                    });
+                }
+            }
+        }
+    }
+    .page-items{
+        .row-flex();
+       
+        .page-item{
+            .size(2);
+            .size-smm(3);
+            .size-xs(6);
+            cursor: pointer;
+            position: relative;
+            padding:10px;
+            box-sizing: border-box;
+            transition: all .5s ease-out;
+            max-height: 250px;
+            &:hover{
+                padding:0;
+            }
+            &:active,
+            &:focus{
+                outline: none !important;
+            }
+            &_bg{
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .page__img{
+                max-height: 230px;
+                overflow: hidden;
+            }
+        }
+    }
+    .content_pagination{
+        .pagination{
+            display: flex;
+            color: #fff;
+            align-items: flex-end;
+            justify-content: flex-end;
+            margin: 25px 5px;
+            &_item {
+                margin-bottom: 5px;
+                .pagination_page-active{
+                    font-size: 28px;
+                    line-height: 35px;
+                    padding: 0 5px;
+                }
+                a{
+                    padding: 0 5px;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+            &_next{
+                .pagination_arrow{
+                    &::before{
+                        content: '>';
+                    }
+                }
+            }
+            &_prev{
+                .pagination_arrow{
+                    &::before{
+                        content: '<';
+                    }
+                }
+            }
+
+        }
+
+    }
+}

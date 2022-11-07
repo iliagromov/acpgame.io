@@ -1,0 +1,114 @@
+.corporate-games {
+    background-color: @color_white;
+    padding-bottom: 7%;
+    overflow: hidden;
+    .wrapper{
+        
+        .xs-block({
+            padding: 0;
+        });
+    }
+    .xs-block({
+        background-color: @color_yellow;
+        padding-bottom: 0;
+    });
+    &-block {
+        .row-flex();
+        position: relative;
+        .xs-block({
+            padding-top: 0;
+            //height: 45vh;
+            flex-direction: column;
+            
+        });
+        &-img {
+            position: relative;
+            // z-index: 80
+            .size(3.5);
+            .size-smm(4);
+            .size-xs(6);
+            .shift-smm-left(-1);
+            .shift-xs-left(0);
+
+            .page__img {
+                // position: relative;
+                // z-index: 80;
+                
+            }
+        }
+
+        &-content {
+            .size(3.5);
+            .size-smm(4);
+            .size-xs(6);
+            .shift-left(-0.5);
+            .shift-xs-left(0);
+            .shift-padding-left(1);
+            .shift-smm-padding-left(.6);
+            .shift-padding-right(.5);
+           
+            .shift-right(-0.6);
+            .shift-xs-right(0);
+            .xs-block({
+                // height: 45vh;
+                // margin-top: 0px;
+                // padding-top: 20px;
+                // justify-content: start;
+                padding: 8% 8%;
+                margin-top: 0;
+            });
+            box-sizing: border-box;
+            margin-top: 7%;
+            padding-top: 11%;
+            padding-bottom: 8%;
+            // height: 543px;
+            // position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // padding-top: 28px;
+            //justify-content: space-evenly;
+            // .size(4);
+            // .shift-left(-0.5);
+            // .shift-right(-0.7);
+            // z-index: 60;
+            background-color: @color_yellow;
+
+            .page__title-h3, .page__text {
+                color: @color_dark;
+                // .shift-left(1.6);
+            }
+
+            .page__title-h3 {
+                // .size(3);
+                //.size-xs(2);
+                // padding-bottom: 20px;
+                padding-bottom: 4%;
+                
+            }
+
+            .page__text {
+                // .size(3);
+                // .size-xs(6);
+                
+                padding-bottom: 18%;
+
+            }
+
+            .page__btn {
+                border: 1px solid @color_dark;
+                color: @color_dark;
+                .size(4);
+                // .size-xs(5.5);
+                // .shift-left(1.6);
+                .xs-block({
+                    margin-bottom: 0;
+                    
+                });
+                
+            }
+
+            
+        }
+    }
+}

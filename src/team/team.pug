@@ -1,0 +1,12 @@
+extends ../templates/template
+block base
+	base(href='../')
+block title
+	title Команда
+block append style
+block content
+	main.page.sample-page.team
+		include content
+	include ../blocks/modal/modal-team
+block append script
+	script(src='js/team-append-content.js')

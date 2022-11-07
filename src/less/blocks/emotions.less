@@ -1,0 +1,163 @@
+.emotions {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    overflow: hidden;
+    background-color: @color_dark;
+    .xs-block({
+        padding-top: 0;
+        padding-bottom: 70px;
+    });
+    &-block {
+        .row-flex();
+        flex-wrap: nowrap;
+        .xs-block({
+            flex-direction: column;
+        });
+        &-content {
+            .xs-block({
+                order: 1;
+            });
+            .size(1.6);
+            .size-md(3);
+            .size-xs(6);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+
+            // flex-direction: column;
+            // justify-content: space-between;
+           
+            &__text{
+                .md-block({
+                    align-self: center;
+                });
+                .smm-block({
+                    align-self: flex-start;
+                });
+                .page__title-h3 {
+                    padding-top: 30px;
+                    color: @color_white;
+                    padding-bottom: 16px;
+                }
+                .page__text {
+                    .size(4);
+                    .size-xs(6);
+                }
+                
+            }
+            .page__btn {
+                .size(5);
+                .size-xs(6);
+                .xs-block({
+                    margin-top:22px;
+                });
+                align-self: flex-end;
+            }
+        }
+
+        &-img {
+            .size(4.4);
+            .size-md(3);
+            .size-xs(6);
+            display: flex;
+            //flex-wrap: nowrap;
+            // .shift-left(-2.8);
+            .md-block({
+                flex-direction: column;
+            });
+
+            &__big {
+                // .size(14);
+                position: relative;
+                flex-shrink: 100;
+                .xs-block({
+                    margin: 0 -30px;
+                });
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: -17px;
+                    left: -17px;
+                    width: 178px;
+                    height: 225px;
+                    background-color: @color_yellow;
+                    z-index: -1;
+                    .xs-block({
+                        display: none;
+                    });
+                }
+                .page__img{
+                    img{
+                        filter: grayscale(100%);
+                    }
+                }
+            }
+            &__preview {
+                padding-left: 36px;
+                flex-basis: 31%;
+                .md-block({
+                    display: flex;
+                    padding-left: 0px;
+                    padding-top: 36px; 
+                });
+                .xs-block({
+                    justify-content: center;
+                });
+                .slider-thumbnails{
+                    .md-block({
+                        display: flex;
+                    });
+                   
+                }
+
+                .page__img_small {
+                    // .size(17);
+                    //padding-bottom: 30px;
+                    // .shift-left(-8);
+                    // &:nth-of-type(1){
+                    //     // display: none;
+                    // }
+                    // + .tns-nav-active.page__img_small{
+                    // }
+                    // &:nth-of-type(n+4){
+                    //     display: none;
+                    // }
+                    // &.tns-nav-active{
+                    //     display: block !important;
+                    // }
+                    // &.tns-nav-active + .page__img_small{
+                    //     display: block;
+                    // }
+                    img{
+                        width: auto;
+                        height: auto;
+                        filter: grayscale(100%);
+                    }
+                    padding-bottom: 23px;
+                        .md-block({
+                            display: flex;
+                            padding-right: 23px;
+                            padding-bottom: 0;
+                        });
+                        .xs-block({
+                            padding-right: 0;
+                        });
+                    &:nth-child(1){
+                        
+                    }
+                    .xs-block({
+                        background-color: @color_gray;
+                    });
+                    &.tns-nav-active{
+                        display: none;
+                        .xs-block({
+                            display: block;
+                            background-color: @color_yellow;
+                        });
+                    }
+                }
+            }
+            
+        }
+    }
+}

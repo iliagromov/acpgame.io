@@ -1,0 +1,12 @@
+extends ../templates/template
+block base
+	base(href='../')
+block title
+	title Галерея
+block append style
+block content
+	main.page.sample-page.gallery
+		include content
+	include ../blocks/modal/modal-gallery
+block append script
+	script(src='js/current-slide-gallery.js')
