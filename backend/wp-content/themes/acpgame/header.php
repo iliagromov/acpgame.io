@@ -2,7 +2,20 @@
 // Для общего шаблона pageTemp
 global $fieldsACF;
 $fieldsACF =  [
-  '_banner',
+	'_banner',
+	'_template',
+	'_banner-info',
+	'_about',
+	'_emotions',
+	'_video',
+	'_games',
+	'_kids',
+	'_corporate-games',
+
+
+
+
+
 ];
 ?>
 <!DOCTYPE html>
