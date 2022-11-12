@@ -1,6 +1,6 @@
 <?php
-$templateACF = get_field('_template');
-if (!empty($templateACF) && $templateACF["isShow"]) :
+$blockACF = get_field('_template');
+if (!empty($blockACF) && $blockACF["isShow"]) :
 ?>
 
 <div>content </div>

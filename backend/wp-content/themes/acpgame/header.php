@@ -11,11 +11,10 @@ $fieldsACF =  [
 	'_games',
 	'_kids',
 	'_corporate-games',
-
-
-
-
-
+	'_battle-of-corporations',
+	'_tourslet',
+	'_trust',
+	'_next-section',
 ];
 ?>
 <!DOCTYPE html>

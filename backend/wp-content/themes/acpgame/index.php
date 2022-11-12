@@ -264,16 +264,18 @@
 						</div>
 					</div>
 				</div>
-			</section><a class="next-section-link" href="games-format/games-format.html">
-							<section class="next-section">
-								<div class="wrapper">
-									<h2 class="page__title-h2">Следующий раздел</h2>
-									<h3 class="page__title-h3">формат  игр</h3>
-									<div class="page__btn">
-										<div class="page__icon page__icon_arrow-long-black_next"></div>
-									</div>
-								</div>
-							</section></a>
+			</section>
+			<a class="next-section-link" href="games-format/games-format.html">
+				<section class="next-section">
+					<div class="wrapper">
+						<h2 class="page__title-h2">Следующий раздел</h2>
+						<h3 class="page__title-h3">формат  игр</h3>
+						<div class="page__btn">
+							<div class="page__icon page__icon_arrow-long-black_next"></div>
+						</div>
+					</div>
+				</section>
+			</a>
 		</main>
 		<?php get_footer(); ?>
 		
