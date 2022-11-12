@@ -7,6 +7,7 @@ get_header();?>
     <main class="page sample-page gallery">
 			<div class="wrapper"><a class="page__on-main page__on-main_yellow" href="../">На главную </a>
 				<h1 class="page__title-h1 page__title-h1_text-shadow_white"><span>Фотоальбом <br></span><span>наших игр</span></h1>
+				<!-- _img-gallery-single -->
 				<div class="page-items">
 								<div class="page-item">
 									<div class="page__img"><img src="assets/img/img-modal-gallery-2.png"></div>
@@ -29,6 +30,7 @@ get_header();?>
 									<div class="page-item_bg open-modal" data-modal="modal-gallery"></div>
 								</div>
 				</div>
+				<!-- _img-gallery-single -->
 			</div>
 			<a class="next-section-link" href="../smi/smi.html">
 							<section class="next-section">
@@ -42,7 +44,7 @@ get_header();?>
 							</section>
 						</a>
 		</main>
-
+		<!-- modal-gallery  -->
 		<section class="modal modal-gallery page_hidden" id="modal-gallery">
 			<div class="modal-container">
 				<div class="modal__action">
@@ -104,5 +106,6 @@ get_header();?>
 				</div>
 			</div>
 		</section>
+		<!-- modal-gallery  -->
 </div>
 <?php get_footer(''); ?>

@@ -13,6 +13,7 @@ get_header();?>
 						<p class="page__text page__text_bottom">Уникальный сценарий, полный азарта, эмоций и здоровой конкуренции, поможет наладить контакт между гостями вечера и надолго запомнится всем собравшимся. Игры могут быть разной механики, адаптированы под любое количество гостей и тематику мероприятия, а сама концепция вечера выстроена под любые задачи.</p>
 					</div>
 				</div>
+				<!--infoSlider_img-left-->
 				<div class="page-block">
 					<div class="block-infoSlider">
 						<div class="block-infoSlider__slider block-infoSlider__left">
@@ -37,9 +38,12 @@ get_header();?>
 						</div>
 					</div>
 				</div>
-								<section class="blockquote">
-									<p class="page__text">Тим-билдинги, клиентские мероприятия в нестандартном формате.</p>
-								</section>
+				<!--infoSlider-->
+				<!--blockquote-->
+					<section class="blockquote">
+						<p class="page__text">Тим-билдинги, клиентские мероприятия в нестандартном формате.</p>
+					</section>
+				<!--blockquote-->
 			</div><a class="next-section-link" href="../battle-of-corporations/battle-of-corporations.html">
 							<section class="next-section">
 								<div class="wrapper">
@@ -51,6 +55,7 @@ get_header();?>
 								</div>
 							</section></a>
 		</main>
+		<!-- modal-callback -->
 				<section class="modal modal-callback page_hidden" id="modal-callback">
 					<div class="modal-container">
 						<div class="modal__action">
@@ -59,6 +64,7 @@ get_header();?>
 						<div class="modal__content">
 							<div class="modal__content-block">
 								<div class="modal__content-text">
+									<!-- <h3 class="page__title-h3">Корпоративная игра</h3> -->
 									<h3 class="page__title-h3">Корпоративная игра</h3>
 									<p class="page__text">Желаете заказать игру для сотрудников или их детей, мы с удовольствием организуем для вас интеллектуальное мероприятие с уникальным сценарием.</p>
 								</div>
@@ -79,5 +85,8 @@ get_header();?>
 						</div>
 					</div>
 				</section>
+				<!-- modal-callback -->
 </div>
+
+
 <?php get_footer(''); ?>

@@ -5,8 +5,10 @@
 get_header();?>
 <div>
 	<main class="page sample-page battle-of-corporations">
+			<!--banner-->
 			<section class="banner">
-				<div class="wrapper">   <a class="page__on-main" href="../">На главную </a>
+				<div class="wrapper">   
+					<a class="page__on-main" href="../">На главную </a>
 					<div class="banner-block">
 						<div class="banner-block__content">
 							<h1 class="page__title-h1 page__title-h1_text-shadow_gray"><span>Битва <br>  </span><span>корпораций</span></h1>
@@ -22,6 +24,8 @@ get_header();?>
 					</div>
 				</div>
 			</section>
+			<!--banner-->
+			<!--content-->
 			<section class="content">
 				<div class="wrapper">
 					<h3 class="page__title-h3">Какие задачи решает «Битва Корпораций»</h3>
@@ -65,6 +69,9 @@ get_header();?>
 					</div>
 				</div>
 			</section>
+			<!--content-->
+			<!--conditions-->
+
 			<section class="conditions">
 				<div class="wrapper">
 					<h3 class="page__title-h3">Условия участия</h3>
@@ -96,6 +103,8 @@ get_header();?>
 					</div>
 				</div>
 			</section>
+			<!--conditions-->
+			<!--present-->
 			<section class="present">
 				<div class="wrapper">
 					<div class="present-block">
@@ -107,6 +116,8 @@ get_header();?>
 					</div>
 				</div>
 			</section>
+			<!--present-->
+			<!--trust-->
 			<section class="trust">
 				<div class="wrapper">
 					<div class="trust-block">
@@ -152,45 +163,50 @@ get_header();?>
 						</div>
 					</div>
 				</div>
-			</section><a class="next-section-link" href="../about/about.html">
+			</section>
+			<!--trust-->
+			<!--TODO: include next-section-l-->
+			<a class="next-section-link" href="../about/about.html">
 							<section class="next-section next-section_red">
 								<div class="wrapper">
 									<h2 class="page__title-h2">Следующий раздел</h2>
-									<h2 class="page__title-h2">title2</h2>
 									<h3 class="page__title-h3">О нас</h3>
 									<div class="page__btn">
 										<div class="page__icon page__icon_arrow-long-black_next"></div>
 									</div>
 								</div>
 							</section></a>
+			<!--TODO: include next-section-l-->
 	</main>
-				<section class="modal modal-callback page_hidden" id="modal-callback">
-					<div class="modal-container">
-						<div class="modal__action">
-							<button class="page__btn page__btn_close close-modal" data-modal="modal-callback"></button>
-						</div>
-						<div class="modal__content">
-							<div class="modal__content-block">
-								<div class="modal__content-text">
-									<h3 class="page__title-h3">Битва Копрораций</h3>
-									<p class="page__text">Желаете заказать игру для сотрудников или их детей, мы с удовольствием организуем для вас интеллектуальное мероприятие с уникальным сценарием.</p>
-								</div>
-								<form class="page-form">
-									<label class="page-label page-input_user">
-										<input class="page-input" type="text" required placeholder="Имя">
-									</label>
-									<label class="page-label page-input_phone">
-										<input class="page-input" type="phone" required placeholder="Телефон">
-									</label>
-									<div class="page-label checkbox">
-										<input class="page-input-checkbox" id="checkbox" type="checkbox" required>
-										<label class="page-label" for="checkbox">Согласен на обработку персональных данных</label>
-									</div>
-									<button class="page__btn page__btn_gray">Отправить заявку</button>
-								</form>
-							</div>
-						</div>
+	<!-- modal-callback -->
+	<section class="modal modal-callback page_hidden" id="modal-callback">
+		<div class="modal-container">
+			<div class="modal__action">
+				<button class="page__btn page__btn_close close-modal" data-modal="modal-callback"></button>
+			</div>
+			<div class="modal__content">
+				<div class="modal__content-block">
+					<div class="modal__content-text">
+						<h3 class="page__title-h3">Битва Копрораций</h3>
+						<p class="page__text">Желаете заказать игру для сотрудников или их детей, мы с удовольствием организуем для вас интеллектуальное мероприятие с уникальным сценарием.</p>
 					</div>
-				</section>
+					<form class="page-form">
+						<label class="page-label page-input_user">
+							<input class="page-input" type="text" required placeholder="Имя">
+						</label>
+						<label class="page-label page-input_phone">
+							<input class="page-input" type="phone" required placeholder="Телефон">
+						</label>
+						<div class="page-label checkbox">
+							<input class="page-input-checkbox" id="checkbox" type="checkbox" required>
+							<label class="page-label" for="checkbox">Согласен на обработку персональных данных</label>
+						</div>
+						<button class="page__btn page__btn_gray">Отправить заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- modal-callback -->
 </div>
 <?php get_footer(''); ?>

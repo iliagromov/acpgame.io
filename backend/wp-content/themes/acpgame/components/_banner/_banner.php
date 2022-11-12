@@ -1,7 +1,7 @@
 
 <?php
-$bannerACF = get_field('_banner');
-if (!empty($bannerACF) && $bannerACF["isShow"]) :
+$blockACF = get_field('_banner');
+if (!empty($blockACF) && $blockACF["isShow"]) :
 ?>
     <section class="banner">
 				<div class="wrapper">

@@ -20,6 +20,7 @@ get_header();?>
 						<button class="page__btn page__btn_gray-yellow">Турслет</button>
 					</div>
 				</div>
+				<!-- sliderVideo -->
 				<div class="page-items" id="sliderVideo">
 								<div class="video-item">
 									<div class="video-item-container">
@@ -64,7 +65,10 @@ get_header();?>
 						<div class="page-nav__number">02</div>
 					</div>
 				</div>
-			</div><a class="next-section-link" href="../smi/smi.html">
+				<!-- sliderVideo -->
+			</div>
+			<!-- next-section -->
+			<a class="next-section-link" href="../smi/smi.html">
 							<section class="next-section">
 								<div class="wrapper">
 									<h2 class="page__title-h2">Следующий раздел</h2>
@@ -73,6 +77,7 @@ get_header();?>
 										<div class="page__icon page__icon_arrow-long-black_next"></div>
 									</div>
 								</div>
-							</section></a>
+							</section>
+						</a>
 		</main>
 <?php get_footer(''); ?>

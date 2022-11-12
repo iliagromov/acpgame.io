@@ -15,6 +15,7 @@ $fieldsACF =  [
 	'_tourslet',
 	'_trust',
 	'_next-section',
+	'_sliderSmi',
 ];
 ?>
 <!DOCTYPE html>

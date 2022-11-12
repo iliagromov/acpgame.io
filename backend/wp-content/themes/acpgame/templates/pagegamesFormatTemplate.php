@@ -9,6 +9,7 @@ get_header();?>
 				<section class="games-format-title">
 					<h1 class="page__title-h1 page__title-h1_text-shadow_gray"><span>Формат <br>  </span><span>Наших игр</span></h1>
 				</section>
+				<!-- games-format-items -->
 				<section class="games-format-items">
 								<section class="games-format-item">
 									<div class="games-format-item-img"><img class="page__img" src="assets/img/img-games-2.png"></div>
@@ -80,10 +81,15 @@ get_header();?>
 									</div>
 								</section>
 				</section>
-								<section class="blockquote">
-									<p class="page__text">Мы приглашаем к участию  новых интересных людей из мира бизнеса.</p>
-								</section>
-			</div><a class="next-section-link" href="../games-of-corparations/games-of-corparations.html">
+				<!-- games-format-items -->
+				<!-- _blockquote -->
+					<section class="blockquote">
+						<p class="page__text">Мы приглашаем к участию  новых интересных людей из мира бизнеса.</p>
+					</section>
+				<!-- blockquote -->
+			</div>
+			<!-- section -->
+			<a class="next-section-link" href="../games-of-corparations/games-of-corparations.html">
 							<section class="next-section">
 								<div class="wrapper">
 									<h2 class="page__title-h2">Следующий раздел</h2>
@@ -92,7 +98,9 @@ get_header();?>
 										<div class="page__icon page__icon_arrow-long-black_next"></div>
 									</div>
 								</div>
-							</section></a>
+							</section>
+			</a>
+			<!-- section -->
 	</main>
 </div>
 <?php get_footer(''); ?>

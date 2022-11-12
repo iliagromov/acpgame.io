@@ -1,7 +1,7 @@
 
 <?php
-$gamesACF = get_field('_games');
-if (!empty($gamesACF) && $gamesACF["isShow"]) :
+$blockACF = get_field('_games');
+if (!empty($blockACF) && $blockACF["isShow"]) :
 ?>
 
 <section class="games">

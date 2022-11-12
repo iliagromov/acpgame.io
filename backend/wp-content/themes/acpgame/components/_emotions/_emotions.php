@@ -1,9 +1,7 @@
 <?php
-$emotionsACF = get_field('_emotions');
-if (!empty($emotionsACF) && $emotionsACF["isShow"]) :
+$blockACF = get_field('_emotions');
+if (!empty($blockACF) && $blockACF["isShow"]) :
 ?>
-
-<div>content </div>
 
 <section class="emotions">
 				<div class="wrapper">

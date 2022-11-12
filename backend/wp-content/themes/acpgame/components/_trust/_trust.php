@@ -1,6 +1,6 @@
 <?php
-$trustACF = get_field('_trust');
-if (!empty($trustACF) && $trustACF["isShow"]) :
+$blockACF = get_field('_trust');
+if (!empty($blockACF) && $blockACF["isShow"]) :
 ?>
 
 <section class="trust">
@@ -48,7 +48,7 @@ if (!empty($trustACF) && $trustACF["isShow"]) :
 						</div>
 					</div>
 				</div>
-			</section><a class="next-section-link" href="games-format/games-format.html">
+			</section>
 
 
 <?php endif; ?>

@@ -1,6 +1,6 @@
 <?php
-$bannerInfoACF = get_field('_banner-info');
-if (!empty($bannerInfoACF) && $bannerInfoACF["isShow"]) :
+$blockACF = get_field('_banner-info');
+if (!empty($blockACF) && $blockACF["isShow"]) :
 ?>
 
 <div class="banner-info">

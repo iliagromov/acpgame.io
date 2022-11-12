@@ -1,6 +1,6 @@
 <?php
-$corporateGamesACF = get_field('_corporate-games');
-if (!empty($corporateGamesACF) && $corporateGamesACF["isShow"]) :
+$blockACF = get_field('_corporate-games');
+if (!empty($blockACF) && $blockACF["isShow"]) :
 ?>
 
 <section class="corporate-games">

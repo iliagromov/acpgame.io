@@ -1,6 +1,6 @@
 <?php
-$battleOfCorporationsACF = get_field('_battle-of-corporations');
-if (!empty($battleOfCorporationsACF) && $battleOfCorporationsACF["isShow"]) :
+$blockACF = get_field('_battle-of-corporations');
+if (!empty($blockACF) && $blockACF["isShow"]) :
 ?>
 
 <section class="battle-of-corporations">

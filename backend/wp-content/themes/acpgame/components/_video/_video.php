@@ -1,6 +1,6 @@
 <?php
-$videoACF = get_field('_video');
-if (!empty($videoACF) && $videoACF["isShow"]) :
+$blockACF = get_field('_video');
+if (!empty($blockACF) && $blockACF["isShow"]) :
 ?>
 
 <div>content </div>

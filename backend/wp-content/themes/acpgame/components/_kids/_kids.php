@@ -1,6 +1,6 @@
 <?php
-$kidsACF = get_field('_kids');
-if (!empty($kidsACF) && $kidsACF["isShow"]) :
+$blockACF = get_field('_kids');
+if (!empty($blockACF) && $blockACF["isShow"]) :
 ?>
 
 <section class="kids">
