@@ -16,6 +16,7 @@ $fieldsACF =  [
 	'_trust',
 	'_next-section',
 	'_sliderSmi',
+	'_modal-callback',
 ];
 ?>
 <!DOCTYPE html>
