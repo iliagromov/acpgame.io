@@ -1,4 +1,7 @@
 <?php
+/**
+ * О нас
+ */
 $blockACF = get_field('_about');
 if (!empty($blockACF) && $blockACF["isShow"]) :
 ?>

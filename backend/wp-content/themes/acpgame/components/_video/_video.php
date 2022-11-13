@@ -1,4 +1,7 @@
 <?php
+/**
+ * Видео
+ */
 $blockACF = get_field('_video');
 if (!empty($blockACF) && $blockACF["isShow"]) :
 ?>

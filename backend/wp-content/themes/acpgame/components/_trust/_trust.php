@@ -1,4 +1,7 @@
 <?php
+/**
+ * Нам доверяют
+ */
 $blockACF = get_field('_trust');
 if (!empty($blockACF) && $blockACF["isShow"]) :
 ?>

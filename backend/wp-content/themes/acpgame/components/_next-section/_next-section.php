@@ -1,6 +1,6 @@
 <?php
 /**
- * Блок следующая секция 
+ * Следующая секция 
  */
 $blockACF = get_field('_next-section');
 if (!empty($blockACF) && $blockACF["isShow"]) :

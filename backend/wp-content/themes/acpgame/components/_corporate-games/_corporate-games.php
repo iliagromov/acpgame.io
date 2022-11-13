@@ -1,4 +1,7 @@
 <?php
+/**
+ * Корпоративные игры
+ */
 $blockACF = get_field('_corporate-games');
 if (!empty($blockACF) && $blockACF["isShow"]) :
 ?>
@@ -15,6 +18,5 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
 		</div>
 	</div>
 </section>
-
 
 <?php endif; ?>

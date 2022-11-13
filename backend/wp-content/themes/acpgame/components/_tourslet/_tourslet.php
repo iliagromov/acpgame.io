@@ -1,4 +1,7 @@
 <?php
+/**
+ * Турслет
+ */
 $blockACF = get_field('_tourslet');
 if (!empty($blockACF) && $blockACF["isShow"]) :
 ?>

@@ -1,6 +1,6 @@
 <?php
 /**
- * Блок слайдер СМИ
+ * Слайдер СМИ
  */
 $blockACF = get_field('_sliderSmi');
 if (!empty($blockACF) && $blockACF["isShow"]) :
@@ -49,7 +49,6 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
         </div> 
     </div>
 </div>
-
 
 <?php endif; ?>
 
