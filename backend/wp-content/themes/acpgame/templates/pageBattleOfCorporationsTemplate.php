@@ -6,7 +6,7 @@ get_header();?>
 <div>
 	<main class="page sample-page battle-of-corporations">
 		<!--banner-->
-		<?php include(TEMPLATEPATH . "/components/_banner-block__content/_banner-block__content.php");?>
+		<?php include(TEMPLATEPATH . "/components/_banner-block-content/_banner-block-content.php");?>
 		<!--banner-->
 		<!--content-->
 		<?php include(TEMPLATEPATH . "/components/_content/_content.php");?>
