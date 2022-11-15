@@ -4,6 +4,9 @@
  */
 $blockACF = get_field('_modal-callback');
 if (!empty($blockACF) && $blockACF["isShow"]) :
+    $fieldsACF = $blockACF['fields'];
+	$title = $fieldsACF['title'];
+	$subtitle = $fieldsACF['subtitle'];
 ?>
 
 <section class="modal modal-callback page_hidden" id="modal-callback">
@@ -14,8 +17,10 @@ if (!empty($blockACF) && $blockACF["isShow"]) :
     <div class="modal__content">
         <div class="modal__content-block">
             <div class="modal__content-text">
-                <h3 class="page__title-h3">Битва Копрораций</h3>
-                <p class="page__text">Желаете заказать игру для сотрудников или их детей, мы с удовольствием организуем для вас интеллектуальное мероприятие с уникальным сценарием.</p>
+                <h3 class="page__title-h3"><?php echo $title ?></h3>
+                <p class="page__text"><?php echo $subtitle ?></p>
+                <!-- <h3 class="page__title-h3">Битва Копрораций</h3>
+                <p class="page__text">Желаете заказать игру для сотрудников или их детей, мы с удовольствием организуем для вас интеллектуальное мероприятие с уникальным сценарием.</p> -->
             </div>
             <form class="page-form">
                 <label class="page-label page-input_user">
